@@ -1,0 +1,6 @@
+streamlit
+scikit-learn==1.2.2
+streamlit_option_menu
+scikit-learn
+twilio
+pandas
