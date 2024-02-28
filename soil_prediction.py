@@ -128,7 +128,7 @@ if (selected == 'Soil Prediction'):
                 )
             
             try:
-                response = requests.post('https://flaskappsoil01.azurewebsites.net/', json=input_features)
+                response = requests.post('http://localhost:5000', json=input_features)
                 if response.status_code == 200:
                     result = response.json()
                     soil = result.get("prediction")
