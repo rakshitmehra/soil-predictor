@@ -50,6 +50,12 @@ if (selected == 'About us'):
     
     st.write("a) Soil Prediction: Input relevant soil features and get real-time predictions on the type of soil.\n\n b) Crop Recommendations: Receive recommendations for crops suitable for the predicted soil type.\n\n c) Alerts: Get alerts for specific soil conditions, such as low water levels.")
     
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image("images/1.jpg", caption="", use_column_width=True)
+    with col2:
+        st.image("images/2.jpg", caption="", use_column_width=True)
+    
     st.write("Thank you soo much for using Soil Predictor. Feel free to explore our features and take advantage of the insights we provide.")
 
 # Soil Prediction Page
