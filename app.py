@@ -4,8 +4,10 @@ import joblib
 app = Flask(__name__)
 
 # Load the model
+model = None
 try:
     model = joblib.load('./SavedModels/new-4-soils.joblib')
+    print("Model loaded successfully.")
 except Exception as e:
     print(f"Error loading the model: {e}")
 
