@@ -26,7 +26,7 @@ Follow these steps to run the Streamlit code locally:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/soil-predicton.git
+git clone https://github.com/rakshitmehra/soil-predicton.git
 cd soil-predictor
 ```
 ### Install Dependencies
