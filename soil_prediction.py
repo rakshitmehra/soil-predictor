@@ -148,18 +148,18 @@ if (selected == 'Soil Prediction'):
                     )
                     
                     # Send SMS alert after prediction
-                    Soil_recommendation_message = (
-                        f"According to values you have entered, the soil is seems to be {soil}.\n\nRecommended crops for {soil} are {crop_recommendations[soil]}.\n\nThank you soo much for using our app. For any further assistance please contact us."
-                    )
-                    try:
-                        message = client.messages.create(
-                            body=Soil_recommendation_message,
-                            from_=twilio_phone_number,
-                            to=recipient_phone_number
-                        )
-                        # st.success(f"SMS sent successfully")
-                    except Exception as e:
-                        st.error(f"Error sending SMS: {e}")
+                    # Soil_recommendation_message = (
+                    #     f"According to values you have entered, the soil is seems to be {soil}.\n\nRecommended crops for {soil} are {crop_recommendations[soil]}.\n\nThank you soo much for using our app. For any further assistance please contact us."
+                    # )
+                    # try:
+                    #     message = client.messages.create(
+                    #         body=Soil_recommendation_message,
+                    #         from_=twilio_phone_number,
+                    #         to=recipient_phone_number
+                    #     )
+                    #     # st.success(f"SMS sent successfully")
+                    # except Exception as e:
+                    #     st.error(f"Error sending SMS: {e}")
                     
                     if soil in crop_recommendations:
                         st.write(
@@ -196,4 +196,4 @@ if (selected == 'Soil Prediction'):
         
         with col1:
             if st.button("Clear"):
-                st.rerun();
+                st.rerun()
